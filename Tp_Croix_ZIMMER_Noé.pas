@@ -10,17 +10,17 @@ VAR
 
 BEGIN
         clrscr;
-         writeln('Ecrire un caractere.');
+         writeln('Veuilez insérer un caractère');
         readln(car);
-         writeln('Donnez une taille.');
+         writeln('Taille de la diagonale ?');
         readln(taille);
 
         For i :=1 TO taille Do
         	begin
         		FOR j:= 1 TO taille DO
-        			IF (j=i) OR (j=taille-(i-1)) THEN
+        		IF (j=i) OR (j=taille-(i-1)) THEN
                 			write(car)
-        			ELSE
+        		ELSE
         				write (' ');
         		writeln;
             end;
